@@ -1,0 +1,33 @@
+.card{
+  float: left;
+  width: 155px;
+  height: auto;
+  border: 3px solid #ccc;
+  box-shadow: 2px 1px 2px #ddd;
+  background: white;
+  overflow: hidden;
+  margin: 22px;
+  margin-top: 40px;  
+  cursor: pointer;
+  transition: all 300ms;
+  border-radius: 12px;
+}
+
+.card:hover{
+  background: #ffffff;
+}
+
+.card:last-child{
+  margin-right: 0px;
+}
+
+.card .icon{
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+  margin: 0px auto;
+  transition: all 300ms;
+}

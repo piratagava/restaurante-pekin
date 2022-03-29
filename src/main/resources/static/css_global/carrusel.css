@@ -1,0 +1,285 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/*Tarjetas*/
+.card{
+  float: left;
+  width: 136px;
+  height: 375px;
+  border: 3px solid #ccc;
+  box-shadow: 2px 1px 2px #ddd;
+  background: white;
+  overflow: hidden;
+  margin: 22px;
+  margin-top: 40px;  
+  cursor: pointer;
+  transition: all 300ms;
+  border-radius: 12px;
+}
+
+.card:hover{
+  background: #ffffff;
+}
+
+.card:last-child{
+  margin-right: 0px;
+}
+
+.card .icon{
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+  margin: 0px auto;
+  transition: all 300ms;
+}
+
+.card:hover .icon{
+  font-size: 23px;
+  color: red;
+  animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon{
+  from{
+    transform: translateY(-200%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
+
+
+.card .category{
+  width: 100%;
+  height: 50px;
+  font-family: "TrebuchetMs";
+  font-size: 17px;
+  font-weight:bold;
+  text-align: center;
+  color: #ff8b33;
+  transition: all 300ms;
+  margin-top: 5px;
+  padding-top: 3px;
+}
+
+.card:hover .category{
+  color: orangered;
+  animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory{
+  from{
+    transform: translateY(-300%);
+    color: black;
+  }
+  to{
+    transform: translateY(0%);
+    color: white;
+  }
+}
+
+.card .description{    
+  text-align: center;
+  color: #121416;
+  font-family: "TrebuchetMs";
+  margin-top: 2px;
+  transition: all 300ms;
+}
+
+.card:hover .description{
+  color: black;
+  animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription{
+  from{
+    transform: translateX(-300%);
+    color: black;
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+.clearfix{
+  float: none;
+  clear: both;
+}
+
+@media(max-width: 1530px){     
+  .imgMenuSeleccionado{
+    padding: 8px;
+    margin-right: 0px;
+  }
+
+  .cards{
+    width: 28.8rem;
+  }     
+
+  
+
+  .botonPush{
+    margin-left: 155px;
+  }
+}
+
+@media(max-width: 480px){  
+  .imgMenuSeleccionado{
+    padding: 8px;
+    margin-right: 0px;
+  }
+
+  .cards{
+    width: 22.5rem;
+  }     
+
+
+
+  .botonPush{
+    margin-left: 110px;
+  }
+}
+
+@media(max-width: 380px){
+
+  .imgMenuSeleccionado{
+    padding: 8px;
+    margin-left: 0px;
+  } 
+
+  .cards{
+    width: 19.2rem;
+  }   
+
+  #modalModificaCantidad h5{     
+    padding-left: 53px;     
+  }
+
+
+  .botonPush{
+    margin-left: 82px;
+  }
+
+
+  h7{
+    margin-right: 1px;
+  }
+  
+  .modal fade label{
+    font-size: 14px;
+    color: black;
+    font-style: italic;
+  }
+  .selectLocalidad{
+    font-size: 15px;
+    color: #ff8b33;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 102px;    
+  z-index: 1000;
+  width: 160px;
+  height: 46px;
+  text-align: center;
+  line-height: 43px;
+  background: #ff8b33;
+  color: #ffffff;    
+  border: 0;
+  border-radius: 3px;
+  text-decoration: none;    
+  font-size: 14px;
+}

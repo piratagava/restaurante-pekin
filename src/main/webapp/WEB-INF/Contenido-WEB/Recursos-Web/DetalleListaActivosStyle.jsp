@@ -1,0 +1,1 @@
+<link href="css_global/detalleListaPedidosActivos.css" rel="stylesheet">
